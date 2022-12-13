@@ -66,7 +66,8 @@
         android:layout_height="wrap_content"
         android:text="D10"
         tools:layout_editor_absoluteX="298dp"
-        tools:layout_editor_absoluteY="105dp" />
+        tools:layout_editor_absoluteY="105dp"
+        tools:visibility="invisible" />
 
     <Button
         android:id="@+id/D20_button"
@@ -74,6 +75,7 @@
         android:layout_height="wrap_content"
         android:text="D20"
         tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="106dp" />
+        tools:layout_editor_absoluteY="106dp"
+        tools:visibility="invisible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

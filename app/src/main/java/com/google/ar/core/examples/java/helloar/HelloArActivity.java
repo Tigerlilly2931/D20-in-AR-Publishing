@@ -310,7 +310,7 @@ public class HelloArActivity extends AppCompatActivity implements SampleRender.R
 
       if (message != null) {
         messageSnackbarHelper.showError(this, message);
-        Log.e(TAG, "Exception creating session", exception);
+        //Log.e(TAG, "Exception creating session", exception);
         return;
       }
     }
@@ -456,7 +456,7 @@ public class HelloArActivity extends AppCompatActivity implements SampleRender.R
                       .setTexture("u_Cubemap", cubemapFilter.getFilteredCubemapTexture())
                       .setTexture("u_DfgTexture", dfgTexture);
     } catch (IOException e) {
-      Log.e(TAG, "Failed to read a required asset file", e);
+      //Log.e(TAG, "Failed to read a required asset file", e);
       messageSnackbarHelper.showError(this, "Failed to read a required asset file: " + e);
     }
   }
@@ -518,7 +518,7 @@ public class HelloArActivity extends AppCompatActivity implements SampleRender.R
     try {
       frame = session.update();
     } catch (CameraNotAvailableException e) {
-      Log.e(TAG, "Camera not available during onDrawFrame", e);
+      //Log.e(TAG, "Camera not available during onDrawFrame", e);
       messageSnackbarHelper.showError(this, "Camera not available. Try restarting the app.");
       return;
     }
@@ -530,7 +530,7 @@ public class HelloArActivity extends AppCompatActivity implements SampleRender.R
           render, depthSettings.depthColorVisualizationEnabled());
       backgroundRenderer.setUseOcclusion(render, depthSettings.useDepthForOcclusion());
     } catch (IOException e) {
-      Log.e(TAG, "Failed to read a required asset file", e);
+      //Log.e(TAG, "Failed to read a required asset file", e);
       messageSnackbarHelper.showError(this, "Failed to read a required asset file: " + e);
       return;
     }
